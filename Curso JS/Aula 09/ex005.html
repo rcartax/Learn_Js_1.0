@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Introduction</title>
+    <style>
+        body {
+            background: rgb(73, 25, 117);
+            color: rgb(211, 211, 211);
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdução ao DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <div id="mensagem">Clique em mim</div>
+    <script>
+        //window.document.write('Ola Mundo! ');
+        //window.document.write(window.navigator.appName);
+        var p1 = window.document.getElementsByTagName('p')[0];
+        var p2 = window.document.getElementsByTagName('p')[1];
+        /*
+
+        var id1 = window.document.getElementById('mensagem')
+        window.document.write('<br>' + p1.innerText)
+        window.document.write('<br>' + p2.innerText)
+        window.document.write('<br>' + p2.innerHTML)
+        //window.alert('Bem Vindo!')
+        document.body.style.background = 'black'
+        p1.style.color = 'lightblue'
+        document.write('<br>' + id1.innerText)
+        id1.style.fontSize = '22pt'
+
+        */
+       var id2 = window.document.querySelector('div#mensagem')
+       id2.style.color = 'black'
+       
+    </script>
+</body>
+</html>

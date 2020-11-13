@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            color: brown;
+            font: normal 25pt Arial;
+        }
+        h1 {
+            color: chocolate;
+            /* Comentario em css */
+        }
+    </style>
+</head>
+<body>
+  <h1>Hello World</h1>
+  <p>Já me livrei da maldição</p>
+  <!--Comentrio em html-->                                                  
+  <script>
+      var n1 = Number.parseFloat(window.prompt("Digite um numero.")) // Number.parseFloat para converter para numero real
+      var n2 = Number.parseInt(window.prompt("Digite outro numero.")) // Number.parseInt para converter para numero Inteiro
+      var n3 = Number(window.prompt(`Digite mais um numero.`))
+      // As novas versoes ne JS suportam utilizar só Number, neste caso o JS define o tipo de numero automaticamente
+      var s = n1 + n2 + n3
+      window.alert("A soma dos dois valores é, " + s)
+      //number + number soma
+      //string + string concatenação
+      /* Para converter para string existe duas opções
+        var field1 = string(Insira um numero ou palavra)
+        ou
+        field1.toString()
+      */
+      window.alert(`A soma dos dois valores é, ${ s }.`)
+  </script>
+</body>
+</html>

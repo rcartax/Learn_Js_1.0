@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area1 {
+            font: normal 20pt Arial;
+            background: lightyellow;
+            color: maroon;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin: 15px;
+        }
+        div#area2 {
+            font: normal 20pt Arial;
+            background: maroon;
+            color: lightgoldenrodyellow;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin: 15px;
+        }
+        section#test {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <section id="test">
+    <div id="area1" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja.....
+    </div>
+    <div id="area2">
+        Interaja.....
+    </div>
+    </section>
+    <script>
+        var a1 = window.document.getElementById('area1') 
+        var a2 = window.document.getElementById('area2')    
+        function clicar() {
+            a1.innerText = 'Clicou!'
+        }
+        function entrar() {
+            a1.innerText = 'Entrou!'
+        }
+        function sair() {
+            a1.innerText = 'Saiu!'
+        }
+        a2.addEventListener('click', clicar1)
+        a2.addEventListener('mouseenter', entrar1)
+        a2.addEventListener('mouseout', sair1)
+        function clicar1() {
+            a2.innerText = 'Clicou!'
+        }
+        function entrar1() {
+            a2.innerText = 'Entrou!'
+        }
+        function sair1() {
+            a2.innerText = 'Saiu!'
+        }
+    </script>
+</body>
+</html>
