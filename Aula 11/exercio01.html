@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Triagem</h1>
+    <input type="text" id="pais">
+    <input type="button" Value="Verificar" onclick="verificar()">
+    <div id="res1"></div>
+    <p>Obrigado pela sua colaboração.</p>
+    <script>
+            
+        function verificar() {
+            let orig1 = window.document.getElementById('pais')
+            let orig = (orig1.value.toLowerCase())
+            res1.innerHTML = `<p>O seu país é ${orig}.</p>`
+            if (orig !== 'portugal') {
+            res1.innerHTML += "<p>Voce é estrangeiro.</p>"
+            }else{
+            res1.innerHTML += "<p>Voce é Portugues.</p>"
+        }
+    }
+
+    </script>
+    
+</body>
+</html>
