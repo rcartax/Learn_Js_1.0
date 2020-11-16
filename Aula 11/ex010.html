@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multas</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" onclick="verif()">
+    <div id="res"></div>
+    
+    <script>
+        var vel =Number(window.document.getElementById('txtvel'))
+        function verif() {
+            res.innerText = typeof vel
+        }
+        
+    </script>
+</body>
+</html>
